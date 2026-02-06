@@ -2,266 +2,60 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-------- CSS ------->
-    <link rel="stylesheet" href="css/style2.css">
-    <!-------- Swiper CSS ------->
-    <link rel="stylesheet" href="Swiper-bunfle.js">
-    <!-- For socials/Icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
-    <!-------- Main JS ------->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Wako K. Wako - Computer Science graduate specializing in web development, AI/ML, and software engineering. View my portfolio and resume." />
+    <meta name="keywords"
+        content="Software Engineer, Web Developer, Computer Science, React, Python, Java, Portfolio" />
+    <meta name="author" content="Wako Kebrom Wako" />
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wakokwako.dev/" />
+    <meta property="og:title" content="Wako K. Wako | Software Engineer Portfolio" />
+    <meta property="og:description"
+        content="Computer Science graduate specializing in web development, AI/ML, and software engineering." />
+    <meta property="og:image" content="/images/og-image.jpg" />
 
-    <title>Wako Responsive Website</title>
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://wakokwako.dev/" />
+    <meta property="twitter:title" content="Wako K. Wako | Software Engineer Portfolio" />
+    <meta property="twitter:description"
+        content="Computer Science graduate specializing in web development, AI/ML, and software engineering." />
+    <meta property="twitter:image" content="/images/og-image.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" href="/favicon.ico" />
+
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#2563eb" />
+
+    <title>Wako K. Wako | Software Engineer Portfolio</title>
 </head>
 
 <body>
-    <!---------------------- HEADER -------------------->
-    <header class="container">
-        <div class="page-header">
-            <div class="logo">
-                <a href="#">Wako K. Wako</a>
-            </div>
-            <input type="checkbox" id="click">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
 
-            <label for="click" class="mainicon">
-                <div class="menu">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </label>
-            <ul>
-                <li><a href="#Home" class="active" style="--navAni:1">Home</a></li>
-                <li><a href="#About" style="--navAni:2">About</a></li>
-                <li><a href="#Skills" style="--navAni:3">Skills</a></li>
-                <!-- <li><a href="#Portfolio" style="--navAni:4">Portfolio</a></li> -->
-                <li><a href="#Contact-Me" style="--navAni:5">Contact</a></li>
-            </ul>
-            <label class="mode">
-                <input type="checkbox" id="darkbtn">
-                <i class='bx bxs-moon'></i>
-            </label>
-        </div>
-    </header>
-
-    <!---------------------- HOME ----------------------->
-    <section class="container" id="Home">
-        <div class="main">
-            <div class="social">
-                <a href="https://www.linkedin.com/in/wk-wako" style="--socialAni:1"><i class='bx bxl-linkedin'></i></a>
-                <a href="#" style="--socialAni:2"><i class='bx bxl-instagram'></i></a>
-                <a href="https://github.com/WaKeb7" style="--socialAni:4"><i class='bx bxl-github'></i></a>
-            </div>
-            <div class="detail">
-                <h1>Hi, I'm <span>Wako</span></h1>
-                <h3>Student</h3>
-                <p> I am a recent Computer Science honors graduate with a minor in Business Administration.
-                </p>
-                <div class="btn">
-                    <a download href="E-assets/Resume Final.pdf"><button>Download Resume</button></a>
-                    
-                </div>
-            </div>
-            <div class="img-sec">
-                <div class="images">
-                    <img src="E-assets/home1.png" alt="" class="img-w">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!---------------------- About ----------------------->
-    <section class="container detail" id="About">
-        <div class="about-title">
-            <h1>Who is <span>Wako?</span></h1>
-        </div>
-        <div class="about">
-            <div class="img-about">
-                <img src="E-assets/02.jpg" alt="" class="img-miles">
-            </div>
-            <div class="detail">
-                <p class="P-info">Hello there! I'm a passionate computer science graduate with a deep love for technology 
-                    and innovation.
-                    I enjoy learning new things, and this portfolio is my way of picking up new skills. I am looking
-                    for different opportunities as Software Engineer and Web Developer.
-                </p>
-                <div class="about-info">
-                    <div class="expirence">
-                        <h3>05+</h3>
-                        <p>Years of professional expirence</p>
-                    </div>
-                    <div class="org">
-                        <h3>03+</h3>
-                        <p>Organizations worked for</p>
-                    </div>
-                </div>
-                <div class="education">
-                    <h1><span>Education</span></h1>
-                    <div class="education-info">
-                        <div class="highschool">
-                            <h3>High School</h3>
-                            <h5>Sandford Internatinal School</h5>
-                            <small>2016-2020</small>
-                        </div>
-                        <div class="college">
-                            <h3>B.S. in Computer Science</h3>
-                            <h5>California Lutheran University</h5>
-                            <small>May 2024</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!---------------------- Skills ----------------------->
-    <section class="container detail" id="Skills">
-        <div class="skills-title">
-            <h1><span>Technical Skills</span></h1>
-            <p>At a Glance</p>
-        </div>
-        <div class="skills">
-            <div class="detail">
-                <div class="skills-list">
-                    <div class="skills-item">
-                        <div class="icon">
-                            <i class="uil uil-laptop"></i>
-                        </div>
-                        <div class="skills-info">
-                            <h3>Languages</h3>
-                            <p>Java, Python, MySQL, HTML, CSS, JavaScript</p>
-                        </div>
-                    </div>
-                    <div class="skills-item">
-                        <div class="icon">
-                            <i class="uil uil-book"></i>
-                        </div>
-                        <div class="skills-info">
-                            <h3>Relevant Courses</h3>
-                            <p>Advanced Computer Programming, Data Communications and Networks, Algorithms, Operating
-                                Systems, Software Engineering, Image Processing, Robotics, Multimedia Technology & Generative AI</p>
-                        </div>
-                    </div>
-                    <div class="skills-item">
-                        <div class="icon">
-                            <i class="uil uil-smile"></i>
-                        </div>
-                        <div class="skills-info">
-                            <h3>Interest</h3>
-                            <p>Software Engineering, Software Development, Cyber-Security, Machine Learning, Data
-                                Visualization, Buisiness Analytics, Artificial Intelligence, Generative AI, Blockchain,
-                                Cryptocurrency & Soccer</p>
-                        </div>
-                    </div>
-                    <div class="skills-item">
-                        <div class="icon">
-                            <i class="uil uil-apps"></i>
-                        </div>
-                        <div class="skills-info">
-                            <h3>Development & Project Management</h3>
-                            <p>Linux, Windows, Virtual Machines, React, GitHub, Slack, Presentation Skills, Team
-                                Leadership/ Management & Cross-Team Communication</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!---------------------- Contact Me ----------------------->
-    <section class="container" id="Contact-Me">
-        <div class="contact-me">
-            <div class="detail">
-                <div class="contact-title">
-                    <h1><span>Lets Talk</span></h1>
-                    <h3>Contact Me</h3>
-                    <p>Feel free to contact me for any questions or opportunities.</p>
-                </div>
-                <div class="contact-container">
-                    <div>
-                        <div class="contact-info">
-                            <i class="uil uil-phone contact__icon"></i>
-                            <div>
-                                <h3>Phone</h3>
-                                <p>+1 (662) 359-3291</p>
-                            </div>
-                        </div>
-                        <div class="contact-info">
-                            <i class="uil uil-envelope contact__icon"></i>
-                            <div>
-                                <h3>Email</h3>
-                                <p>wwako@callutheran.edu</p>
-                            </div>
-                        </div>
-                        <div class="contact-info">
-                            <i class="uil uil-map-marker contact__icon"></i>
-                            <div>
-                                <h3>Location</h3>
-                                <p>Thousand Oaks California</p>
-                            </div>
-                        </div>
-                    </div>
-                    <form action="" class="contact-form Fgrid">
-                        <div class="contact-inputs Fgrid">
-                            <div class="contact-content">
-                                <label for="" class="contact-label">Name</label>
-                                <input type="text" class="contact-input">
-                            </div>
-                            <div class="contact-content">
-                                <label for="" class="contact-label">Email</label>
-                                <input type="email" class="contact-input">
-                            </div>
-                        </div>
-                        <div class="contact-content">
-                            <label for="" class="contact-label">Subject</label>
-                            <input type="text" class="contact-input">
-                        </div>
-                        <div class="contact-content">
-                            <label for="" class="contact-label">Message</label>
-                            <textarea name="" id="" cols="0" rows="7" class="contact-input"></textarea>
-                        </div>
-
-                        <div>
-                            <a href="#" class="button button--flex">
-                                Send Message
-                                <i class="uil uil-message button--icon"></i>
-                            </a>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!---------------------- footer ----------------------->
-
-    <div class="footer">
-        <h3>Wako K. Wako</h3>
-        <div class="social">
-            <a href="https://www.linkedin.com/in/wk-wako" style="--socialAni:1"><i class='bx bxl-linkedin'></i></a>
-            <a href="#" style="--socialAni:2"><i class='bx bxl-instagram'></i></a>
-            <a href="#" style="--socialAni:4"><i class='bx bxl-github'></i></a>
-        </div>
-    </div>
-
+    <!-- Google Analytics - TODO: Replace with your tracking ID -->
+    <!-- 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
     </script>
-
-
-
-    <!-- JS here -->
-    <script src="js/main.js"></script>
-
+    -->
 </body>
 
 </html>
