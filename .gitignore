@@ -17,6 +17,7 @@ build/
 
 # Documentation
 docs/
+.github/instructions/
 
 # IDE
 .vscode/*
