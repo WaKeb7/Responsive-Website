@@ -83,7 +83,7 @@ export const EDUCATION = [
     degree: 'Bachelor of Science in Computer Science',
     school: 'California Lutheran University',
     location: 'Thousand Oaks, CA',
-    year: 'May 2024',
+    year: '',
     honors: 'Honors Graduate',
     minor: 'Minor in Business Administration',
     gpa: '',
